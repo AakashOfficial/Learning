@@ -1,0 +1,11 @@
+D:\Learning\Learning\C#\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp2.1\ConsoleApp3.deps.json
+D:\Learning\Learning\C#\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp2.1\ConsoleApp3.runtimeconfig.json
+D:\Learning\Learning\C#\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp2.1\ConsoleApp3.runtimeconfig.dev.json
+D:\Learning\Learning\C#\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp2.1\ConsoleApp3.dll
+D:\Learning\Learning\C#\ConsoleApp3\ConsoleApp3\bin\Debug\netcoreapp2.1\ConsoleApp3.pdb
+D:\Learning\Learning\C#\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp2.1\ConsoleApp3.csprojAssemblyReference.cache
+D:\Learning\Learning\C#\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp2.1\ConsoleApp3.csproj.CoreCompileInputs.cache
+D:\Learning\Learning\C#\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp2.1\ConsoleApp3.AssemblyInfoInputs.cache
+D:\Learning\Learning\C#\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp2.1\ConsoleApp3.AssemblyInfo.cs
+D:\Learning\Learning\C#\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp2.1\ConsoleApp3.dll
+D:\Learning\Learning\C#\ConsoleApp3\ConsoleApp3\obj\Debug\netcoreapp2.1\ConsoleApp3.pdb
