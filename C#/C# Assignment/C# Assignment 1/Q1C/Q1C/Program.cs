@@ -1,4 +1,8 @@
-﻿namespace Q1C
+﻿/*
+ Question 1.c Get inputs from user and convert it into Boolean
+ */
+
+namespace Q1C
 {
     class Program
     {
