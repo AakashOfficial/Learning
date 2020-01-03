@@ -1,4 +1,12 @@
-﻿namespace Q3
+﻿/*
+ Question 3. Write a program to print all prime numbers between two given numbers.
+ Ask the user to input two positive non-equal integers (between 2 and 1000), first number entered 
+ should be smaller than larger number and if that’s not the case, ask the user to re-enter both 
+ the numbers. Until user enters valid input, show appropriate message and keep asking 
+ for the input again.
+ */
+
+namespace Q3
 {
     class Program
     {
