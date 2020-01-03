@@ -1,4 +1,6 @@
-﻿using System;
+﻿/*
+ Question 1.b Get inputs from user and convert it into Float
+ */
 
 namespace Q1B
 {
