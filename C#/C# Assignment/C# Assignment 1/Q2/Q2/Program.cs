@@ -1,4 +1,9 @@
-﻿namespace Q2
+﻿/*
+ Question 2. Difference between “==” operator, object.Equals methods 
+ and object.ReferenceEquals method
+ */
+
+namespace Q2
 {
     class Program
     {
