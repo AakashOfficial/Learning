@@ -1,4 +1,8 @@
-﻿namespace Q1A
+﻿/*
+ Question 1.a Get inputs from user and convert it into Integer
+ */
+
+namespace Q1A
 {
     class Program
     {
