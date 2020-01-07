@@ -8,11 +8,7 @@ namespace Q1C
     {
         static void Main(string[] args)
         {
-            // Show message to user
-            System.Console.WriteLine("Enter Input to be Converted");
-
-            // taking Input from the User
-            string InputValue = System.Console.ReadLine();
+            
 
             // Converted using the bool.Parse() method
             bool ConvertedValue = bool.Parse(InputValue);
@@ -24,6 +20,17 @@ namespace Q1C
             ConvertedValue = bool.TryParse(InputValue, out def);
             System.Console.WriteLine("Converted using the bool.TryParse() method");
             System.Console.WriteLine("Output : " + ConvertedValue);
+        }
+
+        // fuction for aking input from user
+        static string TakeInput() {
+            // Show message to user
+            System.Console.WriteLine("Enter Input to be Converted");
+
+            // taking Input from the User
+            string InputValue = System.Console.ReadLine();
+
+            return InputValue;
         }
     }
 }
