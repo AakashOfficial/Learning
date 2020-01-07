@@ -33,9 +33,8 @@ namespace Q3
             }
         }
 
-        static void Main(string[] args)
-        {
-            int firstInput, secondInput, count;
+        static void Main(string[] args) {
+            int firstInput, secondInput, count = 0;
             // do while loop to take two input in correct format
             do {
                 System.Console.WriteLine("Enter First Input Number");
@@ -43,7 +42,13 @@ namespace Q3
                 System.Console.WriteLine("Enter Second Input Number");
                 secondInput = System.Convert.ToInt32(System.Console.ReadLine());
             } while (InputValidator(firstInput, secondInput) == 0);
-            
+
+            // call FindPrime()
+            FindPrime(firstInput, secondInput, count);
+        }
+
+        // function to find the prime number
+        static void FindPrime(int firstInput, int secondInput, int count) {
             // for loop is used to print prime nuber between two number
             for (int number = firstInput; number <= secondInput; number++) {
                 count = 0;
