@@ -3,7 +3,7 @@
 namespace DuckAssignment {
 
     // MallardBird implemement interface and override the fly and quack method of DuckFunction interface
-    class MallardBird : DuckFunction {
+    class MallardBird : IDuck {
 
         public void fly() {
             Console.WriteLine("Mallard Birl Fly Very Fast");

@@ -3,7 +3,7 @@
 namespace DuckAssignment {
 
     // Rubberbird implemement interface and override the fly and quack method of DuckFunction interface
-    class RubberBird : DuckFunction {
+    class RubberBird : IDuck {
 
         public void fly() {
             Console.WriteLine("Rubber Bird Don,t Fly");

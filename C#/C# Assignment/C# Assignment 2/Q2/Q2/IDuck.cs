@@ -4,7 +4,7 @@ using System.Text;
 
 namespace DuckAssignment
 {
-    interface DuckFunction {
+    interface IDuck {
         void fly();
         void Quack();
     }
