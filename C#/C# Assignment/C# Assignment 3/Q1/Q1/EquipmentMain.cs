@@ -5,51 +5,32 @@ namespace EquipmentAssignmentExtend {
     class EquipmentMain {
 
         static void Main(string[] args) {
-           
-            // varible used to calculate no of equipment
-            int mobileCount = 0;
-            int immobileCount = 0;
-            int selectEquipment;
-            string temp;
+            int requiredoperation;
+            EquipmentOperation ti = new EquipmentOperation();
 
-            // object through dynameic slicing
-            Equipment equipment1 = new Mobile();
-            Equipment equipment2 = new Immobile();
-
+            char yes = 'Y';
             //to check whether used does not input wrong input
             do {
-                var equipmentTypeValue1 = equipmentType.Mobile;
-                var equipmentTypeValue2 = equipmentType.Immobile;
-                Console.WriteLine("Enter Type of Equipment");
-                while (true) // check whether input is correct
-                {
-                    Console.WriteLine("Press 1 fo Mobile and 2 for ImMobile");
-                    selectEquipment = Convert.ToInt32(Console.ReadLine());
-                    if (selectEquipment == (int)equipmentTypeValue1) {
-                        equipment1.GetInput();
-                        equipment1.GetData();
-                        equipment1.UpdateDistance(equipment1.inputDistance);
-                        equipment1.ShowOutput();
-                        mobileCount++;
-                        break;
-                    }else if (selectEquipment == (int)equipmentTypeValue2) {
-                        equipment2.GetInput();
-                        equipment2.GetData();
-                        equipment2.UpdateDistance(equipment2.inputDistance);
-                        equipment2.ShowOutput();
-                        immobileCount++;
-                        break;
-                    } else {
-                        Console.WriteLine("Enter Again");
-                        continue;
-                    }
-                }
-
-                Console.WriteLine("Total No of Mobile equipment " + mobileCount);
-                Console.WriteLine("Total No of imMobile equipment " + immobileCount);
-                Console.WriteLine("Do you wnat to continue [y/n]");
-                temp = Console.ReadLine();
-            } while (temp == "y");
+                Console.WriteLine("1.Create an equipment-Mobile and Immobile");
+                Console.WriteLine("2.Delete an equipment");
+                Console.WriteLine("3.Move an equipment");
+                Console.WriteLine("4.List of all equipment");
+                Console.WriteLine("5.Show detail of equipment");
+                Console.WriteLine("6 list all mobile equipment");
+                Console.WriteLine("7.List all immobile equipment");
+                Console.WriteLine("8.List all equipment that have not been moved till now");
+                Console.WriteLine("9.Delete all equipment");
+                Console.WriteLine("10 delete all mobile equipment");
+                Console.WriteLine("11 delete all Immobile equipment");
+                
+                Console.WriteLine();
+                Console.WriteLine("select your choice");
+                requiredoperation = Convert.ToInt32(Console.ReadLine());
+                ti.EquipmentOperation1(requiredoperation);
+                // equipmentoperation.EquipmentOperation1(requiredoperation);
+                Console.WriteLine("Want to Continue to do more operations?Enter Y for yes/N for No");
+                yes = Char.Parse(Console.ReadLine());
+            } while (yes != 'N');
 
         }
     }

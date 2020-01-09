@@ -14,30 +14,30 @@ namespace EquipmentAssignment {
             string temp;
 
             // object through dynameic slicing
-            Equipment equipment1 = new Mobile();
-            Equipment equipment2 = new Immobile();
+            Equipment equipmentMobile = new Mobile();
+            Equipment equipmentImmobile = new Immobile();
 
             //to check whether used does not input wrong input
             do {
-                var equipmentTypeValue1 = equipmentType.Mobile;
-                var equipmentTypeValue2 = equipmentType.Immobile;
+                var equipmentMobileType = equipmentType.Mobile;
+                var equipmentImmobileType = equipmentType.Immobile;
                 Console.WriteLine("Enter Type of Equipment");
                 while (true) // check whether input is correct
                 {
                     Console.WriteLine("Press 1 fo Mobile and 2 for ImMobile");
                     selectEquipment = Convert.ToInt32(Console.ReadLine());
-                    if (selectEquipment == (int)equipmentTypeValue1) {
-                        equipment1.GetInput();
-                        equipment1.GetData();
-                        equipment1.UpdateDistance(equipment1.inputDistance);
-                        equipment1.ShowOutput();
+                    if (selectEquipment == (int)equipmentMobileType) {
+                        equipmentMobile.GetInput();
+                        equipmentMobile.GetData();
+                        equipmentMobile.UpdateDistance(equipmentMobile.inputDistance);
+                        equipmentMobile.ShowOutput();
                         mobileCount++;
                         break;
-                    }else if (selectEquipment == (int)equipmentTypeValue2) {
-                        equipment2.GetInput();
-                        equipment2.GetData();
-                        equipment2.UpdateDistance(equipment2.inputDistance);
-                        equipment2.ShowOutput();
+                    }else if (selectEquipment == (int)equipmentImmobileType) {
+                        equipmentImmobile.GetInput();
+                        equipmentImmobile.GetData();
+                        equipmentImmobile.UpdateDistance(equipmentImmobile.inputDistance);
+                        equipmentImmobile.ShowOutput();
                         immobileCount++;
                         break;
                     } else {
