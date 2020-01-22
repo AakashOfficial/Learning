@@ -103,3 +103,5 @@ D:\Learning\Learning\C#\Projects\MVC Demo App\MVC Demo App\obj\Debug\MVC Demo Ap
 D:\Learning\Learning\C#\Projects\MVC Demo App\MVC Demo App\obj\Debug\MVC Demo App.csproj.CopyComplete
 D:\Learning\Learning\C#\Projects\MVC Demo App\MVC Demo App\obj\Debug\MVC Demo App.dll
 D:\Learning\Learning\C#\Projects\MVC Demo App\MVC Demo App\obj\Debug\MVC Demo App.pdb
+D:\Learning\Learning\C#\Projects\MVC Demo App\MVC Demo App\obj\Debug\MVC_Demo_App.Migrations.InitialIdentity_Migration.resources
+D:\Learning\Learning\C#\Projects\MVC Demo App\MVC Demo App\obj\Debug\MVC Demo App.csproj.GenerateResource.cache
