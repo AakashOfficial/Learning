@@ -79,7 +79,8 @@ namespace Application.Controllers
             return View(output);
         }
 
-        public ActionResult RemoveUser(string id) {
+        [HttpGet]
+        public ActionResult RemoveUser(string id, int y = 0) {
             if (id == null) {
                 return HttpNotFound();
             }
@@ -91,6 +92,24 @@ namespace Application.Controllers
             }
 
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult RemoveUser(string id) {
+            if (id == null) {
+                return HttpNotFound();
+            }
+
+            CrudContext db = new CrudContext();
+            var output = db.user.Single(x => x.id == id);
+            if (output == null) {
+                return HttpNotFound();
+            }
+
+            db.user.Remove(output);
+            db.SaveChanges();
+
+            return RedirectToAction("Retrive");
         }
     }
 }
