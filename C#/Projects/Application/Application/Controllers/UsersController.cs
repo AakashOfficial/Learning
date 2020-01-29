@@ -21,10 +21,8 @@ namespace Application.Controllers
         }
 
         [HttpPost]
-        public ActionResult Create(UserModel account)
-        {
-            if (ModelState.IsValid)
-            {
+        public ActionResult Create(UserModel account) {
+            if (ModelState.IsValid) {
                 using (CrudContext db = new CrudContext())
                 {
                     db.user.Add(account);
@@ -38,8 +36,7 @@ namespace Application.Controllers
             return View();
         }
 
-        public ActionResult Retrive(UserModel  user)
-        {
+        public ActionResult Retrive(UserModel  user) {
             using (CrudContext db = new CrudContext())
             {
                 var output = db.user.ToList();
@@ -48,18 +45,18 @@ namespace Application.Controllers
         }
 
         [HttpGet]
-        public ActionResult Updateuser(string id)
-        {
+        public ActionResult Updateuser(string id) {
+            if (id == null) {
+                return HttpNotFound();
+            }
             CrudContext db = new CrudContext();
             var output = db.user.Single(x => x.id == id);
             return View(output);
         }
 
         [HttpPost]
-        public ActionResult Updateuser(UserModel user)
-        {
-            if (ModelState.IsValid)
-            {
+        public ActionResult Updateuser(UserModel user) {
+            if (ModelState.IsValid) {
                 CrudContext db = new CrudContext();
                 db.Entry(user).State = EntityState.Modified;
                 db.SaveChanges();
@@ -70,15 +67,30 @@ namespace Application.Controllers
         }
 
         public ActionResult ShowDetail(string id) {
+            if (id == null) {
+                return HttpNotFound();
+            }
             CrudContext db = new CrudContext();
             var output = db.user.Single(x => x.id == id);
             
-            if (output == null)
-            {
+            if (output == null) {
                 return HttpNotFound();
             }
             return View(output);
+        }
 
+        public ActionResult RemoveUser(string id) {
+            if (id == null) {
+                return HttpNotFound();
+            }
+
+            CrudContext db = new CrudContext();
+            var output = db.user.Single(x => x.id == id);
+            if (output == null) {
+                return HttpNotFound();
+            }
+
+            return View();
         }
     }
 }
