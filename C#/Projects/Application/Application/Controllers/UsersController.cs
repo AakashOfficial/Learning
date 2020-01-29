@@ -39,15 +39,19 @@ namespace Application.Controllers
 
         public ActionResult Retrive(UserModel  user)
         {
-
             using (CrudContext db = new CrudContext())
             {
                 var output = db.user.ToList();
                 return View(output);
             }
-
         }
 
-        
+        [HttpGet]
+        public ActionResult Updateuser(string id)
+        {
+            CrudContext db = new CrudContext();
+            var output = db.user.Single(x => x.id == id);
+            return View(output);
+        }
     }
 }
