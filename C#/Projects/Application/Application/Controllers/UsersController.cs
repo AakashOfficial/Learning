@@ -19,6 +19,24 @@ namespace Application.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult Create(UserModel account)
+        {
+            if (ModelState.IsValid)
+            {
+                using (CrudContext db = new CrudContext())
+                {
+                    db.user.Add(account);
+                    db.SaveChanges();
+                }
+
+                ModelState.Clear();
+                
+                ViewBag.Message = account.UserName + " successfully created.";
+            }
+            return View();
+        }
+
         
     }
 }
