@@ -175,6 +175,8 @@
     <Content Include="Views\Users\Create.cshtml" />
     <Content Include="Views\Users\Updateuser.cshtml" />
     <Content Include="Views\Users\Retrive.cshtml" />
+    <Content Include="Views\Users\ShowDetail.cshtml" />
+    <Content Include="Views\Users\RemoveUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
