@@ -55,7 +55,7 @@ namespace Application.Controllers
         }
 
         [HttpPost]
-        public ActionResult Updateuser(UserModel user) {
+        public ActionResult Updateusers(UserModel user) {
             if (ModelState.IsValid) {
                 CrudContext db = new CrudContext();
                 db.Entry(user).State = EntityState.Modified;
