@@ -9,7 +9,7 @@ console.log(username); */
 // var sum = exportFunction(4, 4);
 // console.log(sum);
 
-const getNotes = require("./component.js");
+const getNotes = require("./notes.js");
 // method 1
 var notes = getNotes();
 console.log(notes);
