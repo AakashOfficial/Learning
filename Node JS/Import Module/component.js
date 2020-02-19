@@ -12,4 +12,10 @@ const sum = function(a, b) {
 }
 
 // Export the Function
-module.exports = sum;
+//module.exports = sum;
+
+const notes = function() {
+    return "Your Notes..";
+}
+
+module.exports = notes;
