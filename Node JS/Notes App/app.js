@@ -1,9 +1,9 @@
-var fs = require("fs");
+var validator = require("validator");
 
-// For the Create or Open the File and Write or Overwrite.
-// fs.writeFileSync("Test.txt", "This is Test File Created By Node.js!");
 
-// For the Create or Open the File and Append.
-// fs.appendFileSync("Newfile.txt", "New Text");
-fs.appendFileSync("Test.txt", "\n\n");
-fs.appendFileSync("Test.txt", "This is Test File Created By Node.js!");
+var email = "19aakash33@gmail.com";
+// Email Validated
+console.log(validator.isEmail(email));
+
+var istrue = "false";
+console.log(validator.isBoolean(istrue));
