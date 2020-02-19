@@ -5,4 +5,11 @@ const lname = "Tyagi";
 const name = fname + lname;
 
 // Export For External Use
-module.exports = name;
+// module.exports = name;
+
+const sum = function(a, b) {
+    return a + b;
+}
+
+// Export the Function
+module.exports = sum;
