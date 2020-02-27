@@ -23,6 +23,8 @@ if (fileName == '' || fileName == null) {
         // console.log(process.argv[4]);
         if (content != '') {
             fs.writeFileSync(fileName, content);
+        } else {
+            console.log("Sorry, No Content to Write the file.")
         }
     } else if (fileOperation == "2") {
         console.log("Enter the Content to write to the File.");
@@ -30,6 +32,8 @@ if (fileName == '' || fileName == null) {
         // console.log(process.argv[4]);
         if (content != '') {
             fs.writeFileSync(fileName, content);
+        } else {
+            console.log("Sorry, No Content to Write the file.")
         }
     } else if (fileOperation == "3") {
         console.log("Enter the Content to write to the File.");
@@ -37,6 +41,15 @@ if (fileName == '' || fileName == null) {
         // console.log(process.argv[4]);
         if (content != '') {
             fs.appendFileSync(fileName, content);
+        } else {
+            console.log("Sorry, No Content to Write the file.")
         }
+    } else if (fileOperation == "4") {
+        console.log("Reading...");
+        console.log(fs.readFileSync(fileName, 'utf8'));
+        var contents = fs.readFileSync(fileName, 'utf8');
+        console.log(contents);
+    } else {
+        console.log("Sorry, You Entered Incorrect Option.");
     }
 }
