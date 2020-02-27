@@ -31,5 +31,12 @@ if (fileName == '' || fileName == null) {
         if (content != '') {
             fs.writeFileSync(fileName, content);
         }
+    } else if (fileOperation == "3") {
+        console.log("Enter the Content to write to the File.");
+        var content = process.argv[4];
+        // console.log(process.argv[4]);
+        if (content != '') {
+            fs.appendFileSync(fileName, content);
+        }
     }
 }
