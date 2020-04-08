@@ -9,7 +9,12 @@ export class FirstcomponentComponent implements OnInit {
 
   constructor() { }
 
+  btnPressed = "not Pressed";
   ngOnInit() {
   }
 
+  onPressed(){
+    alert("Pressed");
+    this.btnPressed = "Pressed";
+  }
 }
